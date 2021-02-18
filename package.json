@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "name": "mern-passport-template",
+    "name": "circle-of-fifths",
     "license": "MIT",
     "description": "Starter MERN application with Passport user authentication using JSON Web Tokens.",
     "main": "server.js",
