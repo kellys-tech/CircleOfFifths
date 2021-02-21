@@ -10,8 +10,8 @@ router.get('/me', (req, res) => {
 router.get('/getdata', (req, res) => {
     Scales.find()
 
-      .then(workout => {
-        res.json(workout);
+      .then(Scales => {
+        res.json(Scales);
       })
       .catch(err => {
         res.status(400).json(err);
