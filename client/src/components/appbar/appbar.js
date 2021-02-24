@@ -4,7 +4,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-require ("../../App.css");
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function TopAppBar() {
   const classes = useStyles();
-
   return (
     <div className={classes.root}>
       <AppBar position="static">

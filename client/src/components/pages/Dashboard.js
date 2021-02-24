@@ -1,6 +1,7 @@
 import React, { useEffect, useContext } from 'react';
 import { Store } from '../../store';
 import { logoutUser } from '../../store/actions/authActions';
+// import appbar from "../../components/appbar";
 
 import API from '../../utils/apiHelper';
 
@@ -24,11 +25,12 @@ const Dashboard = props => {
   };
 
   return (
+    
     <div className="container valign-wrapper" style={{ height: '75vh' }}>
       <div className="row">
         <div className="col s12 center-align">
           <h4>
-            <b>Hey there,</b> {user.name.split(' ')[0]}
+            <b>Signed in as </b> {user.name.split(' ')[0]}
             <p className="flow-text grey-text text-darken-1">
               You are logged into a full-stack{' '} <span style={{ fontFamily: 'monospace' }}>MERN</span> app
             </p>
