@@ -1,0 +1,347 @@
+body {
+    background-color: black;
+    color: rgb(78, 190, 255);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50pt;
+    letter-spacing: 5pt;
+    /* text-decoration: underline; */
+}
+
+.circle {
+    width: 550px;
+    height: 550px;
+    justify-content: center;
+    /* background-color: chartreuse; */
+    border-radius: 50%;
+    border: 5px solid yellow;
+    position: relative;
+}
+
+.mini-circle {
+    width: 70%;
+    height: 70%;
+    /* background-color: chartreuse; */
+    position: relative;
+    top: 15%;
+    left: 15%;
+}
+
+.circle .circle-letter {
+    --rotation: 0;
+    color: yellow;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    transform: rotate(var(--rotation));
+    
+}
+
+.circle .circle-letterB {
+    --rotation: 0;
+    color: yellow;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    transform: rotate(var(--rotation));
+}
+.circle .circle-letter input {
+    position: relative;
+    transform: rotate(var(--rotation));
+    height: 40px;
+    width: 40px;
+    background: none;
+    /* border: none; */
+    /* border-bottom: 2px solid yellow; */
+    color: chartreuse;
+}
+
+.circle .circle-letterB input {
+    position: relative;
+    transform: rotate(var(--rotation));
+    height: 40px;
+    width: 40px;
+    background: none;
+    /* border: none; */
+    /* border-bottom: 2px solid yellow; */
+    color: chartreuse;
+}
+
+.mini-circle .circle-number {
+    --rotation: 0;
+    color: yellow;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    transform: rotate(var(--rotation));
+}
+
+.mini-circle .circle-numberB {
+    --rotation: 0;
+    color: yellow;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    transform: rotate(var(--rotation));
+    
+}
+
+.mini-circle .circle-number input {
+    position: relative;
+    transform: rotate(var(--rotation));
+    height: 29px;
+    width: 29px;
+    background: none;
+    /* border: none; */
+    /* border-bottom: 2px solid yellow; */
+    color: chartreuse;
+}
+
+.mini-circle .circle-numberB input {
+    position: relative;
+    transform: rotate(var(--rotation));
+    height: 29px;
+    width: 29px;
+    background: none;
+    /* border: none; */
+    /* border-bottom: 2px solid yellow; */
+    color: chartreuse;
+}
+
+
+.circle .letG { --rotation: 30deg; }
+.circle .letD { --rotation: 60deg; }
+.circle .letA { --rotation: 90deg; }
+.circle .letE { --rotation: 120deg; }
+.circle .letB { --rotation: 142deg; }
+.circle .letCf { --rotation: 154deg; }
+.circle .letFs { --rotation: 175deg; }
+.circle .letGf { --rotation: 185deg; }
+.circle .letCs { --rotation: 206deg; }
+.circle .letDf { --rotation: 218deg; }
+.circle .letAf { --rotation: 240deg; }
+.circle .letEf { --rotation: 270deg; }
+.circle .letBf { --rotation: 300deg; }
+.circle .letF { --rotation: 330deg; }
+
+.circle .letG input { --rotation: -30deg; }
+.circle .letD input { --rotation: -60deg; }
+.circle .letA input { --rotation: -90deg; }
+.circle .letE input { --rotation: -120deg; }
+.circle .letB input { --rotation: -142deg; }
+.circle .letCf input { --rotation: -154deg; }
+.circle .letFs input { --rotation: -175deg; }
+.circle .letGf input { --rotation: -185deg; }
+.circle .letCs input { --rotation: -206deg; }
+.circle .letDf input { --rotation: -218deg; }
+.circle .letAf input { --rotation: -240deg; }
+.circle .letEf input { --rotation: -270deg; }
+.circle .letBf input { --rotation: -300deg; }
+.circle .letF input { --rotation: -330deg; }
+
+.circle .mini-circle .num1s { --rotation: 30deg; }
+.circle .mini-circle .num2s { --rotation: 60deg; }
+.circle .mini-circle .num3s { --rotation: 90deg; }
+.circle .mini-circle .num4s { --rotation: 120deg; }
+.circle .mini-circle .num5s { --rotation: 142deg; }
+.circle .mini-circle .num7f { --rotation: 154deg; }
+.circle .mini-circle .num6s { --rotation: 175deg; }
+.circle .mini-circle .num6f { --rotation: 185deg; }
+.circle .mini-circle .num7s { --rotation: 206deg; }
+.circle .mini-circle .num5f { --rotation: 218deg; }
+.circle .mini-circle .num4f { --rotation: 240deg; }
+.circle .mini-circle .num3f { --rotation: 270deg; }
+.circle .mini-circle .num2f { --rotation: 300deg; }
+.circle .mini-circle .num1f { --rotation: 330deg; }
+
+.circle .mini-circle .num1s input { --rotation: -30deg; }
+.circle .mini-circle .num2s input { --rotation: -60deg; }
+.circle .mini-circle .num3s input { --rotation: -90deg; }
+.circle .mini-circle .num4s input { --rotation: -120deg; }
+.circle .mini-circle .num5s input { --rotation: -142deg; }
+.circle .mini-circle .num7f input { --rotation: -154deg; }
+.circle .mini-circle .num6s input { --rotation: -175deg; }
+.circle .mini-circle .num6f input { --rotation: -185deg; }
+.circle .mini-circle .num7s input { --rotation: -206deg; }
+.circle .mini-circle .num5f input { --rotation: -218deg; }
+.circle .mini-circle .num4f input { --rotation: -240deg; }
+.circle .mini-circle .num3f input { --rotation: -270deg; }
+.circle .mini-circle .num2f input { --rotation: -300deg; }
+.circle .mini-circle .num1f input { --rotation: -330deg; }
+
+
+
+.keyOC {
+    text-align: center;
+    font-size: 40pt;
+    letter-spacing: 4pt;
+}
+
+.fsTitle {
+    text-align: center;
+    font-size: 30pt;
+    letter-spacing: 1.5pt;
+}
+
+.O-FTitle {
+    margin-top: 25%;
+    text-align: center;
+    font-size: 20pt;
+    letter-spacing: 1.5pt;
+}
+
+.orderFlats input {
+    margin-top: 5%;
+    justify-content: center;
+    width: 10%;
+    height: 70%;
+    background: none;
+    /* border: none; */
+    /* border-bottom: 2px solid yellow; */
+    color: chartreuse;
+}
+
+.ssTitle {
+    text-align: center;
+    font-size: 30pt;
+    letter-spacing: 1.5pt;
+}
+
+.O-STitle {
+    margin-top: 25%;
+    text-align: center;
+    font-size: 20pt;
+    letter-spacing: 1.5pt;
+}
+
+.orderSharps input {
+    margin-top: 5%;
+    width: 10%;
+    height: 70%;
+    background: none;
+    /* border: none; */
+    /* border-bottom: 2px solid yellow; */
+    color: chartreuse;
+}
+
+.flatScales input[type=text] {
+    width: 10%;
+    background: none;
+    /* border: none; */
+    /* border-bottom: 2px solid yellow; */
+    color: chartreuse;
+}
+
+.sharpScales input[type=text] {
+    width: 10%;
+    background: none;
+    /* border: none; */
+    /* border-bottom: 2px solid yellow; */
+    color: chartreuse;
+}
+
+/* Piano keyboard */
+.pianoKeys {
+    top: 0;
+}
+
+.whiteKeys {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+}
+
+.blackKeys {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.keyboardCol {
+    position: relative;  
+    min-height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.keyboardContainer {
+    width: 700px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.modal-dialog {
+    width: 200px;
+}
+
+.modal-title {
+    color: black;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+
+
+/* Piano key button styling: */
+.white {
+    width: 51px;
+    height: 200px;
+    background-color: white;
+}
+
+.black {
+    width: 36px;
+    height: 121px;
+    background-color: black;
+    position: absolute;
+    top: 0
+}
+
+/* Positioning of black piano key buttons: */
+#fifteen {
+    left: 32px 
+}
+#sixteen { 
+    left: 82px 
+}
+#seventeen { 
+    left: 182px 
+}
+#eighteen {
+    left: 232px 
+}
+#nineteen {
+    left: 282px 
+}
+#twenty {
+    left: 382px 
+}
+#twentyOne {
+    left: 432px 
+}
+#twentyTwo {
+    left: 532px 
+}
+#twentyThree {
+    left: 582px 
+}
+#twentyFour {
+    left: 632px 
+}
+
