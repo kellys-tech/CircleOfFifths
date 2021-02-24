@@ -5,7 +5,7 @@ import "react-piano/dist/styles.css";
 
 import DimensionsProvider from "./DimensionsProvider";
 import SoundfontProvider from "./SoundfontProvider";
-import "./styles.css";
+import "./style.css";
 
 // webkitAudioContext fallback needed to support Safari
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();

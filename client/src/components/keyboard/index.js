@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Piano, KeyboardShortcuts, MidiNumbers } from "react-piano";
-import "react-piano/dist/styles.css";
+import "react-piano/dist/style.css";
 
 import DimensionsProvider from "./DimensionsProvider";
 import SoundfontProvider from "./SoundfontProvider";
-import "./styles.css";
+require ("../../App.css");
 
 // webkitAudioContext fallback needed to support Safari
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
