@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Piano, KeyboardShortcuts, MidiNumbers } from "react-piano";
+import { Piano, MidiNumbers } from "react-piano";
 import "react-piano/dist/styles.css";
 
 import DimensionsProvider from "./DimensionsProvider";
@@ -15,19 +15,19 @@ const noteRange = {
   first: MidiNumbers.fromNote("c3"),
   last: MidiNumbers.fromNote("f4")
 };
-const keyboardShortcuts = KeyboardShortcuts.create({
-  firstNote: noteRange.first,
-  lastNote: noteRange.last,
-  keyboardConfig: KeyboardShortcuts.HOME_ROW
-});
+// const keyboardShortcuts = KeyboardShortcuts.create({
+//   firstNote: noteRange.first,
+//   lastNote: noteRange.last,
+//   keyboardConfig: KeyboardShortcuts.HOME_ROW
+// });
 
 function App() {
   return (
     <div>
       <h1>react-piano demos</h1>
       <div className="mt-5">
-        <p>Basic piano with hardcoded width</p>
-        <BasicPiano />
+        {/* <p>Basic piano with hardcoded width</p> */}
+        {/* <BasicPiano /> */}
       </div>
 
       <div className="mt-5">
@@ -46,27 +46,27 @@ function App() {
   );
 }
 
-function BasicPiano() {
-  return (
-    <SoundfontProvider
-      instrumentName="acoustic_grand_piano"
-      audioContext={audioContext}
-      hostname={soundfontHostname}
-      render={({ isLoading, playNote, stopNote }) => (
-        <Piano
-          noteRange={noteRange}
-          width={300}
-          playNote={playNote}
-          stopNote={stopNote}
-          disabled={isLoading}
-          keyboardShortcuts={keyboardShortcuts}
-        />
-      )}
-    />
-  );
-}
+// function BasicPiano() {
+//   return (
+//     <SoundfontProvider
+//       instrumentName="acoustic_grand_piano"
+//       audioContext={audioContext}
+//       hostname={soundfontHostname}
+//       render={({ isLoading, playNote, stopNote }) => (
+//         <Piano
+//           noteRange={noteRange}
+//           width={300}
+//           playNote={playNote}
+//           stopNote={stopNote}
+//           disabled={isLoading}
+//           keyboardShortcuts={keyboardShortcuts}
+//         />
+//       )}
+//     />
+//   );
+// }
 
-function ResponsivePiano(props) {
+export default function ResponsivePiano(props) {
   return (
     <DimensionsProvider>
       {({ containerWidth, containerHeight }) => (

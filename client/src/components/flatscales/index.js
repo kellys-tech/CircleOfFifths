@@ -3,6 +3,7 @@ require ("../../App.css");
 
 function flatScales() {
   return (
+
   <div className="row">
     <div className="col-3">
         <div className="flatScales">

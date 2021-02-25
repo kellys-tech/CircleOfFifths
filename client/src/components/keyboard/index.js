@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Piano, KeyboardShortcuts, MidiNumbers } from "react-piano";
-import "react-piano/dist/style.css";
+import { Piano, MidiNumbers } from "react-piano";
 
 import DimensionsProvider from "./DimensionsProvider";
 import SoundfontProvider from "./SoundfontProvider";
-require ("../../App.css");
+// require ("../../App.css");
 
 // webkitAudioContext fallback needed to support Safari
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
@@ -21,7 +20,7 @@ const noteRange = {
 //   keyboardConfig: KeyboardShortcuts.HOME_ROW
 // });
 
-function App() {
+export default function App() {
   return (
     <div>
       <h1>react-piano demos</h1>

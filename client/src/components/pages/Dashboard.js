@@ -1,7 +1,13 @@
 import React, { useEffect, useContext } from 'react';
 import { Store } from '../../store';
 import { logoutUser } from '../../store/actions/authActions';
-// import appbar from "../../components/appbar";
+import TopAppBar from "../appbar/appbar.js";
+// import Keyboard from "../keyboard/index.js";
+import Flatscales from "../flatscales/index.js";
+import Sharpscales from "../sharpscales/index.js";
+import OrderofFlats from "../orderofflats/index.js";
+import OrderofSharps from "../orderofsharps/index.js";
+import Circle from "../circle/index.js";
 
 import API from '../../utils/apiHelper';
 
@@ -25,15 +31,21 @@ const Dashboard = props => {
   };
 
   return (
-    
+    <div>
+      <TopAppBar/>
     <div className="container valign-wrapper" style={{ height: '75vh' }}>
       <div className="row">
         <div className="col s12 center-align">
           <h4>
             <b>Signed in as </b> {user.name.split(' ')[0]}
             <p className="flow-text grey-text text-darken-1">
-              You are logged into a full-stack{' '} <span style={{ fontFamily: 'monospace' }}>MERN</span> app
+              {/* <Keyboard/> */}
             </p>
+            <Flatscales />
+            <Sharpscales />
+            <OrderofFlats />
+            <Circle />
+            <OrderofSharps />
           </h4>
 
           <button
@@ -51,6 +63,7 @@ const Dashboard = props => {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 };
