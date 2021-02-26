@@ -1,9 +1,7 @@
 import React from "react";
-require ("../../App.css");
 
 function circle() {
 return (
-
 <div className="col-6">
                 <div className="circle">
                     <div className="circle-letter letC">
@@ -45,7 +43,6 @@ return (
                     </div>
                 </div>
             </div>
-
             )}
 
             export default circle;
