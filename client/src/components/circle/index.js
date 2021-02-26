@@ -2,7 +2,6 @@ import React from "react";
 
 function circle() {
 return (
-
 <div className="col-6">
                 <div className="circle">
                     <div className="circle-letter letC">
@@ -44,7 +43,6 @@ return (
                     </div>
                 </div>
             </div>
-
             )}
 
             export default circle;

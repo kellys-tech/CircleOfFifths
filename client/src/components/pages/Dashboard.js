@@ -8,6 +8,7 @@ import Sharpscales from "../sharpscales/index.js";
 import OrderofFlats from "../orderofflats/index.js";
 import OrderofSharps from "../orderofsharps/index.js";
 import Circle from "../circle/index.js";
+import { Grid } from '@material-ui/core';
 
 import API from '../../utils/apiHelper';
 
@@ -33,6 +34,17 @@ const Dashboard = props => {
   return (
     <div>
       <TopAppBar/>
+      <Grid container direction="row" justify="space-between" alignItems="flex-start">
+        <Grid item xs= {3}>
+          <Flatscales />
+          </Grid>
+          <Grid item xs= {6}>
+          <Circle />
+          </Grid>
+          <Grid item xs= {3}>
+          <Sharpscales />
+          </Grid>
+
     <div className="container valign-wrapper" style={{ height: '75vh' }}>
       <div className="row">
         <div className="col s12 center-align">
@@ -41,10 +53,9 @@ const Dashboard = props => {
             <p className="flow-text grey-text text-darken-1">
               {/* <Keyboard/> */}
             </p>
-            <Flatscales />
-            <Sharpscales />
+            
+            
             <OrderofFlats />
-            <Circle />
             <OrderofSharps />
           </h4>
 
@@ -64,6 +75,7 @@ const Dashboard = props => {
         </div>
       </div>
     </div>
+    </Grid>
     </div>
   );
 };
