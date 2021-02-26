@@ -1,5 +1,4 @@
 import React from "react";
-require ("../../App.css");
 
 function flatScales() {
   return (
