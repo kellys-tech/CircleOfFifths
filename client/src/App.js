@@ -5,14 +5,13 @@ import setAuthToken from './utils/setAuthToken';
 import { setCurrentUser, logoutUser } from './store/actions/authActions';
 import { Store } from './store';
 
-import './App.css';
-
-import Navbar from './components/partials/Navbar';
 import Landing from './components/pages/Landing';
 import Register from './components/pages/Register';
 import Login from './components/pages/Login';
 import PrivateRoute from './components/auth/PrivateRoute';
 import Dashboard from './components/pages/Dashboard';
+
+require('./App.css');
 
 const App = () => {
   const { dispatch } = useContext(Store);
