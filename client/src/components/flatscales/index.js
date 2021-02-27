@@ -2,8 +2,7 @@ import React from "react";
 
 function flatScales() {
   return (
-  <div className="row">
-    <div className="col-3">
+  <div className="fscales">
         <div className="flatScales">
                     <input type="text" id="fsd11"/>
                     <input type="text" id="fsd12"/>
@@ -74,8 +73,7 @@ function flatScales() {
                     <input type="text" id="fsd77"/>
                     <input type="text" id="fsd78"/>
                 </div>
-    </div>           
-</div>
+    </div>
 
 )}
 
