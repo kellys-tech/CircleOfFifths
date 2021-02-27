@@ -22,10 +22,12 @@ const Dashboard = props => {
         <Grid item xs= {3}>
         <Sharpscales />
         </Grid>
-        <Grid item xs= {6}>
+        <Grid item xs= {3}>
         <OrderofFlats />
         </Grid>
         <Grid item xs= {6}>
+        </Grid>
+        <Grid item xs= {3}>
         <OrderofSharps />
         </Grid>
       </Grid>
