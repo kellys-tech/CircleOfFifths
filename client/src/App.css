@@ -203,7 +203,7 @@ h1 {
 .orderFlats input {
     margin-top: 5%;
     justify-content: center;
-    width: 10%;
+    width: 9%;
     height: 70%;
     background: none;
     /* border: none; */
@@ -226,7 +226,7 @@ h1 {
 
 .orderSharps input {
     margin-top: 5%;
-    width: 10%;
+    width: 9%;
     height: 70%;
     background: none;
     /* border: none; */
@@ -235,7 +235,7 @@ h1 {
 }
 
 .flatScales input[type=text] {
-    width: 10%;
+    width: 9%;
     background: none;
     /* border: none; */
     /* border-bottom: 2px solid yellow; */
@@ -243,7 +243,7 @@ h1 {
 }
 
 .sharpScales input[type=text] {
-    width: 10%;
+    width: 9%;
     background: none;
     /* border: none; */
     /* border-bottom: 2px solid yellow; */
@@ -251,7 +251,7 @@ h1 {
 }
 
 /* Piano keyboard */
-.pianoKeys {
+/* .pianoKeys {
     top: 0;
 }
 
@@ -294,12 +294,12 @@ h1 {
 
 .modal-footer {
     justify-content: center;
-}
+} */
 
 
 
 /* Piano key button styling: */
-.white {
+/* .white {
     width: 51px;
     height: 200px;
     background-color: white;
@@ -311,10 +311,10 @@ h1 {
     background-color: black;
     position: absolute;
     top: 0
-}
+} */
 
 /* Positioning of black piano key buttons: */
-#fifteen {
+/* #fifteen {
     left: 32px 
 }
 #sixteen { 
@@ -343,5 +343,5 @@ h1 {
 }
 #twentyFour {
     left: 632px 
-}
+} */
 
