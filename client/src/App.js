@@ -5,6 +5,9 @@ import setAuthToken from './utils/setAuthToken';
 import { setCurrentUser, logoutUser } from './store/actions/authActions';
 import { Store } from './store';
 
+import './App.css';
+
+
 import Landing from './components/pages/Landing';
 import Register from './components/pages/Register';
 import Login from './components/pages/Login';
@@ -36,13 +39,11 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        {/* <Navbar /> */}
         <Route exact path="/" component={Landing} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
         <Switch>
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
-          {/* use this for authenticated routes */}
         </Switch>
       </div>
     </Router>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
+import { Grid, Container } from '@material-ui/core';
+import Keyboard from "../keyboard"
 import TopAppBar from "../appbar/appbar.js";
 import Flatscales from "../flatscales/index.js";
 import Sharpscales from "../sharpscales/index.js";
@@ -12,7 +13,15 @@ const Dashboard = props => {
   return (
     <div>
       <TopAppBar/>
+      <Container >
       <Grid container>
+      <Grid item xs= {3}>
+        </Grid>
+      <Grid item xs= {6}>
+        <Keyboard />
+        </Grid>
+        <Grid item xs= {3}>
+        </Grid>
         <Grid item xs= {3}>
         <Flatscales />
         </Grid>
@@ -31,6 +40,7 @@ const Dashboard = props => {
         <OrderofSharps />
         </Grid>
       </Grid>
+      </Container>
     </div>
   );
 };
