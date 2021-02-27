@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { Piano, MidiNumbers } from "react-piano";
 
 // import "react-piano/dist/style.css";
@@ -16,17 +15,6 @@ const noteRange = {
   last: MidiNumbers.fromNote("b4")
 };
 
-function App() {
-  return (
-    <div>
-      <div className="mt-5">
-        <p>Keyboard</p>
-        <ResponsivePiano />
-      </div>
-    </div>
-  );
-}
-
 function ResponsivePiano(props) {
   return (
     <SoundfontProvider
@@ -35,9 +23,10 @@ function ResponsivePiano(props) {
       hostname={soundfontHostname}
       render={({ isLoading, playNote, stopNote }) => (
         <Piano
+        className="keys"
           noteRange={noteRange}
-          width={200}
-          height={200}
+          width={550}
+          // height={200}
           playNote={playNote}
           stopNote={stopNote}
           disabled={isLoading}
@@ -48,5 +37,3 @@ function ResponsivePiano(props) {
   );
 }
 export default ResponsivePiano;
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
