@@ -1,78 +1,82 @@
 import React from "react";
 
 function sharpScales() {
+    const allSharpsArray=["ssd11", "ssd13", "ssd14, ssd15", "ssd16", "ssd17", "ssd18", "ssd21", "ssd22", "ssd23", "ssd24", "ssd25", "ssd26", "ssd27", "ssd28", "ssd31", "ssd32", "ssd33", "ssd34", "ssd35", "ssd36", "ssd37", "ssd38", "ssd41", "ssd42", "ssd43", "ssd44", "ssd45", "ssd46", "ssd47", "ssd48", "ssd51", "ssd52", "ssd53", "ssd54", "ssd55", "ssd56", "ssd57", "ssd58", "ssd61", "ssd62", "ssd63", "ssd64", "ssd65", "ssd66", "ssd67", "ssd68", "ssd71", "ssd72", "ssd73", "ssd74", "ssd75", "ssd76", "ssd77", "ssd78"];
+
+    const finalArray=[]
     return (
+
         <div className="sscales">
             <div className="row">Sharp Scales</div>
             <div className="sharpScales">
-                <input type="text" id="ssd11" />
-                <input type="text" id="ssd12" />
-                <input type="text" id="ssd13" />
-                <input type="text" id="ssd14" />
-                <input type="text" id="ssd15" />
-                <input type="text" id="ssd16" />
-                <input type="text" id="ssd17" />
-                <input type="text" id="ssd18" />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
             </div>
             <div className="sharpScales">
-                <input type="text" id="ssd21" />
-                <input type="text" id="ssd22" />
-                <input type="text" id="ssd23" />
-                <input type="text" id="ssd24" />
-                <input type="text" id="ssd25" />
-                <input type="text" id="ssd26" />
-                <input type="text" id="ssd27" />
-                <input type="text" id="ssd28" />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
             </div>
             <div className="sharpScales">
-                <input type="text" id="ssd31" />
-                <input type="text" id="ssd32" />
-                <input type="text" id="ssd33" />
-                <input type="text" id="ssd34" />
-                <input type="text" id="ssd35" />
-                <input type="text" id="ssd36" />
-                <input type="text" id="ssd37" />
-                <input type="text" id="ssd38" />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
             </div>
             <div className="sharpScales">
-                <input type="text" id="ssd41" />
-                <input type="text" id="ssd42" />
-                <input type="text" id="ssd43" />
-                <input type="text" id="ssd44" />
-                <input type="text" id="ssd45" />
-                <input type="text" id="ssd46" />
-                <input type="text" id="ssd47" />
-                <input type="text" id="ssd48" />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
             </div>
             <div className="sharpScales">
-                <input type="text" id="ssd51" />
-                <input type="text" id="ssd52" />
-                <input type="text" id="ssd53" />
-                <input type="text" id="ssd54" />
-                <input type="text" id="ssd55" />
-                <input type="text" id="ssd56" />
-                <input type="text" id="ssd57" />
-                <input type="text" id="ssd58" />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
             </div>
             <div className="sharpScales">
-                <input type="text" id="ssd61" />
-                <input type="text" id="ssd62" />
-                <input type="text" id="ssd63" />
-                <input type="text" id="ssd64" />
-                <input type="text" id="ssd65" />
-                <input type="text" id="ssd66" />
-                <input type="text" id="ssd67" />
-                <input type="text" id="ssd68" />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
             </div>
             <div className="sharpScales">
-                <input type="text" id="ssd71" />
-                <input type="text" id="ssd72" />
-                <input type="text" id="ssd73" />
-                <input type="text" id="ssd74" />
-                <input type="text" id="ssd75" />
-                <input type="text" id="ssd76" />
-                <input type="text" id="ssd77" />
-                <input type="text" id="ssd78" />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
             </div>
         </div>
 

@@ -16,6 +16,7 @@ const noteRange = {
 };
 
 function ResponsivePiano(props) {
+  
   return (
     <SoundfontProvider
       instrumentName="acoustic_grand_piano"
