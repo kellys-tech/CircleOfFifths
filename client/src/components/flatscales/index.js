@@ -1,78 +1,80 @@
 import React from "react";
 
-function flatScales() {
+function flatScales(props) {
+    const allFlatsArray=["fsd12", "fsd13", "fsd14, fsd15", "fsd16", "fsd17", "fsd18", "fsd21", "fsd22", "fsd23", "fsd24", "fsd25", "fsd26", "fsd27", "fsd28", "fsd31", "fsd32", "fsd33", "fsd34", "fsd35", "fsd36", "fsd37", "fsd38", "fsd41", "fsd42", "fsd43", "fsd44", "fsd45", "fsd46", "fsd47", "fsd48", "fsd51", "fsd52", "fsd53", "fsd54", "fsd55", "fsd56", "fsd57", "fsd58", "fsd61", "fsd62", "fsd63", "fsd64", "fsd65", "fsd66", "fsd67", "fsd68", "fsd71", "fsd72", "fsd73", "fsd74", "fsd75", "fsd76", "fsd77", "fsd78"];
+
+    const finalArray=[]
     return (
         <div className="fscales">
             <div className="row">Flat Scales</div>
             <div className="flatScales">
-                <input type="text" id="fsd11" />
-                <input type="text" id="fsd12" />
-                <input type="text" id="fsd13" />
-                <input type="text" id="fsd14" />
-                <input type="text" id="fsd15" />
-                <input type="text" id="fsd16" />
-                <input type="text" id="fsd17" />
-                <input type="text" id="fsd18" />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
             </div>
             <div className="flatScales">
-                <input type="text" id="fsd21" />
-                <input type="text" id="fsd22" />
-                <input type="text" id="fsd23" />
-                <input type="text" id="fsd24" />
-                <input type="text" id="fsd25" />
-                <input type="text" id="fsd26" />
-                <input type="text" id="fsd27" />
-                <input type="text" id="fsd28" />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
             </div>
             <div className="flatScales">
-                <input type="text" id="fsd31" />
-                <input type="text" id="fsd32" />
-                <input type="text" id="fsd33" />
-                <input type="text" id="fsd34" />
-                <input type="text" id="fsd35" />
-                <input type="text" id="fsd36" />
-                <input type="text" id="fsd37" />
-                <input type="text" id="fsd38" />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
             </div>
             <div className="flatScales">
-                <input type="text" id="fsd41" />
-                <input type="text" id="fsd42" />
-                <input type="text" id="fsd43" />
-                <input type="text" id="fsd44" />
-                <input type="text" id="fsd45" />
-                <input type="text" id="fsd46" />
-                <input type="text" id="fsd47" />
-                <input type="text" id="fsd48" />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
             </div>
             <div className="flatScales">
-                <input type="text" id="fsd51" />
-                <input type="text" id="fsd52" />
-                <input type="text" id="fsd53" />
-                <input type="text" id="fsd54" />
-                <input type="text" id="fsd55" />
-                <input type="text" id="fsd56" />
-                <input type="text" id="fsd57" />
-                <input type="text" id="fsd58" />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
             </div>
             <div className="flatScales">
-                <input type="text" id="fsd61" />
-                <input type="text" id="fsd62" />
-                <input type="text" id="fsd63" />
-                <input type="text" id="fsd64" />
-                <input type="text" id="fsd65" />
-                <input type="text" id="fsd66" />
-                <input type="text" id="fsd67" />
-                <input type="text" id="fsd68" />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
             </div>
             <div className="flatScales">
-                <input type="text" id="fsd71" />
-                <input type="text" id="fsd72" />
-                <input type="text" id="fsd73" />
-                <input type="text" id="fsd74" />
-                <input type="text" id="fsd75" />
-                <input type="text" id="fsd76" />
-                <input type="text" id="fsd77" />
-                <input type="text" id="fsd78" />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
+                <input type="text" id={finalArray.scale} />
             </div>
         </div>
 
