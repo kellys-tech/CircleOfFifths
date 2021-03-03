@@ -1,19 +1,19 @@
 import React from "react";
 
 function orderofFlats() {
-    const orderFlatsArray=["input88", "input99", "input110, input121", "input132", "input143", "input155"];
+    const orderFlatsArray=[88, 99, 110, 121, 132, 143, 154];
 
     return(
 <div>
-<div className="row O-FTitle">The Order of Flats</div>
+<div className="row O-STitle">The Order of Flats</div>
 <div className="orderFlats">
-    <input type="text" id="O-F1"/>
-    <input type="text" id="O-F2"/>
-    <input type="text" id="O-F3"/>
-    <input type="text" id="O-F4"/>
-    <input type="text" id="O-F5"/>
-    <input type="text" id="O-F6"/>
-    <input type="text" id="O-F7"/>
+    <input type="text" id="input88"/>
+    <input type="text" id="input99"/>
+    <input type="text" id="input110"/>
+    <input type="text" id="input121"/>
+    <input type="text" id="input132"/>
+    <input type="text" id="input143"/>
+    <input type="text" id="input154"/>
 </div>
 </div>
 
