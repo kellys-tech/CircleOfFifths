@@ -12,32 +12,32 @@ function flatScales(props) {
                 ))}
             </div>
             <div className="flatScales">
-            { allFlatsArray.filter((id, i) => i > 7 && i < 16).map(id => (
+            { allFlatsArray.filter((id, i) => i > 8 && i <= 16).map(id => (
                     <input type="text" id={id} disabled/>
                 ))}
             </div>
             <div className="flatScales">
-            { allFlatsArray.filter((id, i) => i > 7 && i < 24).map(id => (
+            { allFlatsArray.filter((id, i) => i > 16 && i <= 24).map(id => (
                     <input type="text" id={id} disabled/>
                 ))}
             </div>
             <div className="flatScales">
-            { allFlatsArray.filter((id, i) => i > 7 && i < 32).map(id => (
+            { allFlatsArray.filter((id, i) => i > 24 && i <= 32).map(id => (
                     <input type="text" id={id} disabled/>
                 ))}
             </div>
             <div className="flatScales">
-            { allFlatsArray.filter((id, i) => i > 7 && i < 40).map(id => (
+            { allFlatsArray.filter((id, i) => i > 32 && i <= 40).map(id => (
                     <input type="text" id={id} disabled/>
                 ))}
             </div>
             <div className="flatScales">
-            { allFlatsArray.filter((id, i) => i > 7 && i < 48).map(id => (
+            { allFlatsArray.filter((id, i) => i > 40 && i <= 48).map(id => (
                     <input type="text" id={id} disabled/>
                 ))}
             </div>
             <div className="flatScales">
-            { allFlatsArray.filter((id, i) => i > 7 && i < 56).map(id => (
+            { allFlatsArray.filter((id, i) => i > 48 && i <= 56).map(id => (
                     <input type="text" id={id} disabled/>
                 ))}
             </div>
