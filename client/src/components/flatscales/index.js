@@ -1,80 +1,45 @@
 import React from "react";
 
 function flatScales(props) {
-    const allFlatsArray=["fsd12", "fsd13", "fsd14, fsd15", "fsd16", "fsd17", "fsd18", "fsd21", "fsd22", "fsd23", "fsd24", "fsd25", "fsd26", "fsd27", "fsd28", "fsd31", "fsd32", "fsd33", "fsd34", "fsd35", "fsd36", "fsd37", "fsd38", "fsd41", "fsd42", "fsd43", "fsd44", "fsd45", "fsd46", "fsd47", "fsd48", "fsd51", "fsd52", "fsd53", "fsd54", "fsd55", "fsd56", "fsd57", "fsd58", "fsd61", "fsd62", "fsd63", "fsd64", "fsd65", "fsd66", "fsd67", "fsd68", "fsd71", "fsd72", "fsd73", "fsd74", "fsd75", "fsd76", "fsd77", "fsd78"];
+    const allFlatsArray=["input11", "input12", "input13", "input14", "input15", "input16", "input17", "input18", "input21", "input22", "input23", "input24", "input25", "input26", "input27", "input28", "input31", "input32", "input33", "input34", "input35", "input36", "input37", "input38", "input41", "input42", "input43", "input44", "input45", "input46", "input47", "input48", "input51", "input52", "input53", "input54", "input55", "input56", "input57", "input58", "input61", "input62", "input63", "input64", "input65", "input66", "input67", "input68", "input71", "input72", "input73", "input74", "input75", "input76", "input77", "input78"];
 
-    const finalArray=[]
     return (
         <div className="fscales">
             <div className="row">Flat Scales</div>
             <div className="flatScales">
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
+                { allFlatsArray.filter((id, i) => i < 8).map(id => (
+                    <input type="text" id={id} disabled/>
+                ))}
             </div>
             <div className="flatScales">
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
+            { allFlatsArray.filter((id, i) => i > 7 && i < 16).map(id => (
+                    <input type="text" id={id} disabled/>
+                ))}
             </div>
             <div className="flatScales">
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
+            { allFlatsArray.filter((id, i) => i > 7 && i < 24).map(id => (
+                    <input type="text" id={id} disabled/>
+                ))}
             </div>
             <div className="flatScales">
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
+            { allFlatsArray.filter((id, i) => i > 7 && i < 32).map(id => (
+                    <input type="text" id={id} disabled/>
+                ))}
             </div>
             <div className="flatScales">
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
+            { allFlatsArray.filter((id, i) => i > 7 && i < 40).map(id => (
+                    <input type="text" id={id} disabled/>
+                ))}
             </div>
             <div className="flatScales">
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
+            { allFlatsArray.filter((id, i) => i > 7 && i < 48).map(id => (
+                    <input type="text" id={id} disabled/>
+                ))}
             </div>
             <div className="flatScales">
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
-                <input type="text" id={finalArray.scale} />
+            { allFlatsArray.filter((id, i) => i > 7 && i < 56).map(id => (
+                    <input type="text" id={id} disabled/>
+                ))}
             </div>
         </div>
 
