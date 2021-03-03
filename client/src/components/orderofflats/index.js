@@ -1,6 +1,8 @@
 import React from "react";
 
 function orderofFlats() {
+    const orderFlatsArray=["input88", "input99", "input110, input121", "input132", "input143", "input155"];
+
     return(
 <div>
 <div className="row O-FTitle">The Order of Flats</div>

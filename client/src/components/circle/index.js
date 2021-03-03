@@ -1,7 +1,9 @@
 import React from "react";
 
 function circle() {
-    const circleArray=["input9", "input20", "input31, input42", "input53", "input64", "input75"];
+    const circleArray=["input9", "input20", "input31, input42", "input53", "input64", "input75", "input86", "input97", "input108, input119", "input130", "input141", "input152"];
+
+    const miniCircleArray=["input10", "input21", "input32, input43", "input54", "input65", "input76", "input87", "input98", "input109, input110", "input131", "input142", "input153"];
     
 return (
 <div className="col-6">
