@@ -1,19 +1,19 @@
 import React from "react";
 
 function orderofSharps() {
-  const orderSharpsArray=["input11", "input22", "input33, input44", "input55", "input66", "input77"];
+  const orderSharpsArray=[11, 22, 33, 44, 55, 66, 77];
   
   return (
     <div>
     <div className="row O-STitle">The Order of Sharps</div>
     <div className="orderSharps">
-        <input type="text" id="O-S1"/>
-        <input type="text" id="O-S2"/>
-        <input type="text" id="O-S3"/>
-        <input type="text" id="O-S4"/>
-        <input type="text" id="O-S5"/>
-        <input type="text" id="O-S6"/>
-        <input type="text" id="O-S7"/>
+        <input type="text" id="input11"/>
+        <input type="text" id="input22"/>
+        <input type="text" id="input33"/>
+        <input type="text" id="input44"/>
+        <input type="text" id="input55"/>
+        <input type="text" id="input66"/>
+        <input type="text" id="input77"/>
     </div>
 </div>
 
