@@ -1,6 +1,8 @@
 import React from "react";
 
 function circle() {
+    const circleArray=["input9", "input20", "input31, input42", "input53", "input64", "input75"];
+    
 return (
 <div className="col-6">
                 <div className="circle">
