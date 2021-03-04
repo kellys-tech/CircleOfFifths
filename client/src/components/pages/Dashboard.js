@@ -7,15 +7,15 @@ import Sharpscales from "../sharpscales/index.js";
 import OrderofFlats from "../orderofflats/index.js";
 import OrderofSharps from "../orderofsharps/index.js";
 import Circle from "../circle/index.js";
-// import Modal from "../modal/index.js";
+import Dialog from "../dialog/index.js";
 
 const Dashboard = props => {
-  const [sharpArray, setsharpArray] = useState([]);
-  const [flatArray, setflatArray] = useState([]);
-  const [isSharp, updateSharp] = useState(false);
-  const [isFlat, updateFlat] = useState(false);
-  const [currF, setflatIndex] = useState(0);
-  const [currS, setsharpIndex] = useState(0);
+  // const [sharpArray, setsharpArray] = useState([]);
+  // const [flatArray, setflatArray] = useState([]);
+  // const [isSharp, updateSharp] = useState(false);
+  // const [isFlat, updateFlat] = useState(false);
+  // const [currF, setflatIndex] = useState(0);
+  // const [currS, setsharpIndex] = useState(0);
   const [currentInput, setCurrentInput] = useState(1);
 
 
@@ -32,6 +32,11 @@ const notes = [{midi:48, note: "C", altAlt: "B#"}, {midi:49, note: "C#", alt: "D
     const noteObj = notes.find(note => note.midi === midiNum)
     console.log(noteObj.note)
     // modal condition here.
+    function choiceButton(props) {
+      if (noteObj.alt) {
+        return <Dialog />;
+      }
+    }
 
     const inputField = document.querySelector(`#input${currentInput}`)
     inputField.focus()
@@ -78,5 +83,3 @@ const notes = [{midi:48, note: "C", altAlt: "B#"}, {midi:49, note: "C#", alt: "D
 };
 
 export default Dashboard;
-
-
