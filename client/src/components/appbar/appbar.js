@@ -11,18 +11,22 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     backgroundColor: "black"
   },
+  nav:{
+    backgroundColor: "black"},
   title: {
     flexGrow: 1,
     color: "yellow"
   }
 }));
 
+
+
 export default function TopAppBar() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar className={classes.nav}>
           <Typography variant="h6" className={classes.title}>
             The Circle of Fifths
           </Typography>

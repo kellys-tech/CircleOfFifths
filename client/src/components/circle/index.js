@@ -7,7 +7,17 @@ function circle() {
     
 return (
 <div className="col-6">
+                <div className="row keyOC">C D E F G A B C</div>
+                <div className="row steps"> W W h W W W h</div>
                 <div className="circle">
+                <div class= "line1"></div>
+                <div class= "line2"></div>
+                <div class= "line3"></div>
+                <div class= "line4"></div>
+                <div class= "line5"></div>
+                <div class= "line6"></div>
+                <div class= "dot"></div>
+
                     <div className="circle-letter letC">
                         <div>C</div>
                     </div>
@@ -28,7 +38,7 @@ return (
 
                     <div className="mini-circle">
                         <div className="circle-number num0">
-                            <div>0b/0#</div>
+                            <div>a</div>
                         </div>
                         <div className="circle-number num1s"><input type="text" id="input10"/></div>
                         <div className="circle-number num2s"><input type="text" id="input21"/></div>

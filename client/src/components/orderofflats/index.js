@@ -5,7 +5,7 @@ function orderofFlats() {
 
     return(
 <div>
-<div className="row O-STitle">The Order of Flats</div>
+<div className="row OFTitle">The Order of Flats</div>
 <div className="orderFlats">
     <input type="text" id="input88"/>
     <input type="text" id="input99"/>
