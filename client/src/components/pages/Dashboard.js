@@ -73,6 +73,7 @@ const notes = [{midi:48, note: "C", altAlt: "B#"}, {midi:49, note: "C#", alt: "D
         <Grid item xs= {3}>
         <Flatscales
         ids={allFlatsArray} />
+        <OrderofFlats />
         </Grid>
         <Grid item xs= {6}>
         <Circle />
@@ -80,13 +81,6 @@ const notes = [{midi:48, note: "C", altAlt: "B#"}, {midi:49, note: "C#", alt: "D
         <Grid item xs= {3}>
         <Sharpscales 
         ids={allSharpsArray}/>
-        </Grid>
-        <Grid item xs= {3}>
-        <OrderofFlats />
-        </Grid>
-        <Grid item xs= {6}>
-        </Grid>
-        <Grid item xs= {3}>
         <OrderofSharps />
         </Grid>
       </Grid>
