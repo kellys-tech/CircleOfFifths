@@ -5,7 +5,7 @@ function orderofSharps() {
   
   return (
     <div>
-    <div className="row O-STitle">The Order of Sharps</div>
+    <div className="row OSTitle">The Order of Sharps</div>
     <div className="orderSharps">
         <input type="text" id="input11"/>
         <input type="text" id="input22"/>
