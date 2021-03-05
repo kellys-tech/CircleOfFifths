@@ -1,17 +1,12 @@
 import React from "react";
-import {Button, List, ListItem, ListItemText, DialogTitle, Dialog} from '@material-ui/core'
+import {List, ListItem, ListItemText, DialogTitle, Dialog} from '@material-ui/core'
 
-function dialogNotes(props) {
-    const notes = props.notes;
-    if (notes) {}
-};
+function NoteDialog(props) {
+  const { onClose, choices, open } = props;
 
-function SimpleDialog(props) {
-  const { onClose, selectedValue, open } = props;
-
-  const handleClose = () => {
-    onClose(selectedValue);
-  };
+  // const handleClose = () => {
+  //   onClose(selectedValue);
+  // };
 
   const handleListItemClick = (value) => {
     onClose(value);
@@ -19,19 +14,19 @@ function SimpleDialog(props) {
 
   return (
     <Dialog
-      onClose={handleClose}
+      // onClose={handleClose}
       aria-labelledby="simple-dialog-title"
       open={open}
     >
       <DialogTitle id="simple-dialog-title">Choose one</DialogTitle>
       <List>
-        {notes.map((notes) => (
+        {choices.map((note, i) => (
           <ListItem
             button
-            onClick={() => handleListItemClick(notes)}
-            key={notes}
+            onClick={() => handleListItemClick(note)}
+            key={i}
           >
-            <ListItemText primary={notes} />
+            <ListItemText primary={note} />
           </ListItem>
         ))}
       </List>
@@ -39,26 +34,4 @@ function SimpleDialog(props) {
   );
 }
 
-export default function SimpleDialogDemo() {
-  const [open, setOpen] = React.useState(false);
-  const [selectedValue, setSelectedValue] = React.useState(notes[1]);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = (value) => {
-    setOpen(false);
-    setSelectedValue(value);
-  };
-
-  return (
-    <div>
-      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-        This dialog will open on a keyboard button click
-      </Button>
-      <SimpleDialog 
-      open={open} onClose={handleClose} />
-    </div>
-  );
-}
+export default NoteDialog;

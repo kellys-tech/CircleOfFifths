@@ -7,7 +7,7 @@ import Sharpscales from "../sharpscales/index.js";
 import OrderofFlats from "../orderofflats/index.js";
 import OrderofSharps from "../orderofsharps/index.js";
 import Circle from "../circle/index.js";
-import Dialog from "../dialog/index.js";
+import NoteDialog from "../dialog/index.js";
 
 const Dashboard = props => {
   // const [sharpArray, setsharpArray] = useState([]);
@@ -18,6 +18,8 @@ const Dashboard = props => {
   // const [currS, setsharpIndex] = useState(0);
   const [currentInput, setCurrentInput] = useState(1);
 
+  const [dialogOpen, setDialogOpen] = useState(false);
+  const [choices, setChoices] = useState([]);
 
   const allSharpsArray=[1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14, 15, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 30, 34, 35, 36, 37, 38, 39, 40, 41, 45, 46, 47, 48, 49, 50, 51, 52, 56, 57, 58, 59, 60, 61, 62, 63, 67, 68, 69, 70, 71, 72, 73, 74];
 
@@ -31,19 +33,30 @@ const notes = [{midi:48, note: "C", altAlt: "B#"}, {midi:49, note: "C#", alt: "D
     // console.log(midiNum);
     const noteObj = notes.find(note => note.midi === midiNum)
     console.log(noteObj.note)
-    // modal condition here.
-    function choiceButton(props) {
-      if (noteObj.alt) {
-        return <Dialog />;
-      }
-    }
+   if (noteObj.alt) {
+     setChoices ([noteObj.note, noteObj.alt])
+    setDialogOpen (true)
+   }
+   else
+   setNote (noteObj.note)
+  }
 
+  const setNote = (note) => {
+    setDialogOpen(false)
     const inputField = document.querySelector(`#input${currentInput}`)
     inputField.focus()
-    inputField.value= noteObj.note
+    inputField.value=note
     console.log(inputField)
     setCurrentInput(currentInput+1)
+    // checkDone()
   }
+
+  // const checkDone = () => {
+  //   const inputs = document.querySelectorAll('.flatScales input, .sharpScales input')
+  //   const empty=Array.from(inputs).filter(input => !input.value)
+  //   console.log(empty)
+  //   if (empty.length === !alert ('You are finished!'));
+  // }
     return (
     <div>
       <TopAppBar/>
@@ -78,6 +91,7 @@ const notes = [{midi:48, note: "C", altAlt: "B#"}, {midi:49, note: "C#", alt: "D
         </Grid>
       </Grid>
       </Container>
+      <NoteDialog open={dialogOpen} choices={choices} onClose={setNote}/>
     </div>
   );
 };
