@@ -1,8 +1,18 @@
 import React from "react";
-import {List, ListItem, ListItemText, DialogTitle, Dialog} from '@material-ui/core'
+import {List, ListItem, ListItemText, DialogTitle, Dialog, makeStyles} from '@material-ui/core'
+
+const useStyles = makeStyles({
+  dialog: {
+    position: "absolute", 
+    top: "50px",
+    left: "49%"
+  }
+})
 
 function NoteDialog(props) {
   const { onClose, choices, open } = props;
+
+  const classes = useStyles()
 
   // const handleClose = () => {
   //   onClose(selectedValue);
@@ -14,6 +24,7 @@ function NoteDialog(props) {
 
   return (
     <Dialog
+    classes = {{paper: classes.dialog}}
       // onClose={handleClose}
       aria-labelledby="simple-dialog-title"
       open={open}
