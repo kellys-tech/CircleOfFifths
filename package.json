@@ -9,9 +9,7 @@
         "start:prod": "node server.js",
         "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
         "client": "npm start --prefix client",
-        "install": "npm install --prefix client",
-        "build": "npm run build --prefix client",
-        "heroku-postbuild": "npm run build"
+        "heroku-postbuild": "cd client && npm install && npm run build"
     },
     "dependencies": {
         "axios": "^0.21.1",
