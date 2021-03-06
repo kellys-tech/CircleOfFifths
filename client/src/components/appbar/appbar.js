@@ -15,7 +15,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "black"},
   title: {
     flexGrow: 1,
-    color: "lightskyblue"
+    color: "lightskyblue",
+    letterSpacing: 10
   }
 }));
 
@@ -27,8 +28,8 @@ export default function TopAppBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar className={classes.nav}>
-          <Typography variant="h6" className={classes.title}>
-            The Circle of Fifths
+          <Typography variant="h2" align="center" className={classes.title}>
+            <b>The Circle of Fifths</b>
           </Typography>
           <Button color="inherit">Logout</Button>
         </Toolbar>

@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    color: rgb(78, 190, 255);
+    color: lightskyblue;
 }
 
 h1 {
@@ -14,15 +14,13 @@ h1 {
     border: 3px solid yellow;
 }
 
-
-
 .circle {
     width: 500px;
     height: 500px;
     /* justify-content: center; */
     /* background-color: chartreuse; */
     border-radius: 50%;
-    border: 5px solid rgb(78, 190, 255);
+    border: 5px solid lightskyblue;
     position: relative;
 }
 
@@ -52,7 +50,7 @@ h1 {
     width: 100%;
     height: 100%;
     text-align: center;
-    font-size: 50px;
+    font-size: 48px;
     position: absolute;
     transform: rotate(var(--rotation));
     
@@ -72,26 +70,26 @@ h1 {
 .circle .circle-letter input {
     position: relative;
     transform: rotate(var(--rotation));
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     background: none;
     /* border: none; */
     /* border-bottom: 2px solid yellow; */
     color: chartreuse;
-    font-size: 25px;
+    font-size: 38px;
     text-align: center;
 }
 
 .circle .circle-letterB input {
     position: relative;
     transform: rotate(var(--rotation));
-    height: 30px;
-    width: 30px;
+    height: 38px;
+    width: 38px;
     background: none;
     /* border: none; */
     /* border-bottom: 2px solid yellow; */
     color: chartreuse;
-    font-size: 25px;
+    font-size: 28px;
     text-align: center;
 }
 
@@ -100,6 +98,7 @@ h1 {
     color: chartreuse;
     width: 100%;
     height: 100%;
+    font-size: 29px;
     text-align: center;
     position: absolute;
     transform: rotate(var(--rotation));
@@ -118,6 +117,7 @@ h1 {
 }
 
 .mini-circle .circle-number input {
+    text-transform: lowercase;
     position: relative;
     transform: rotate(var(--rotation));
     height: 29px;
@@ -126,11 +126,12 @@ h1 {
     border: none;
     /* border-bottom: 2px solid yellow; */
     color: chartreuse;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
 }
 
 .mini-circle .circle-numberB input {
+    text-transform: lowercase;
     position: relative;
     transform: rotate(var(--rotation));
     height: 25px;
@@ -139,7 +140,7 @@ h1 {
     border: none;
     /* border-bottom: 2px solid yellow; */
     color: chartreuse;
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -147,12 +148,12 @@ h1 {
 .circle .letD { --rotation: 60deg; }
 .circle .letA { --rotation: 90deg; }
 .circle .letE { --rotation: 120deg; }
-.circle .letB { --rotation: 143deg; }
+.circle .letB { --rotation: 144deg; }
 .circle .letCf { --rotation: 157deg; }
 .circle .letFs { --rotation: 174deg; }
 .circle .letGf { --rotation: 186deg; }
 .circle .letCs { --rotation: 203deg; }
-.circle .letDf { --rotation: 218deg; }
+.circle .letDf { --rotation: 216deg; }
 .circle .letAf { --rotation: 240deg; }
 .circle .letEf { --rotation: 270deg; }
 .circle .letBf { --rotation: 300deg; }
@@ -162,12 +163,12 @@ h1 {
 .circle .letD input { --rotation: -60deg; }
 .circle .letA input { --rotation: -90deg; }
 .circle .letE input { --rotation: -120deg; }
-.circle .letB input { --rotation: -143deg; }
+.circle .letB input { --rotation: -144deg; }
 .circle .letCf input { --rotation: -157deg; }
 .circle .letFs input { --rotation: -174deg; }
 .circle .letGf input { --rotation: -186deg; }
 .circle .letCs input { --rotation: -203deg; }
-.circle .letDf input { --rotation: -218deg; }
+.circle .letDf input { --rotation: -216deg; }
 .circle .letAf input { --rotation: -240deg; }
 .circle .letEf input { --rotation: -270deg; }
 .circle .letBf input { --rotation: -300deg; }
@@ -178,11 +179,11 @@ h1 {
 .circle .mini-circle .num3s { --rotation: 90deg; }
 .circle .mini-circle .num4s { --rotation: 120deg; }
 .circle .mini-circle .num5s { --rotation: 143deg; }
-.circle .mini-circle .num7f { --rotation: 157deg; }
+.circle .mini-circle .num7f { --rotation: 156deg; }
 .circle .mini-circle .num6s { --rotation: 174deg; }
 .circle .mini-circle .num6f { --rotation: 186deg; }
 .circle .mini-circle .num7s { --rotation: 203deg; }
-.circle .mini-circle .num5f { --rotation: 218deg; }
+.circle .mini-circle .num5f { --rotation: 216deg; }
 .circle .mini-circle .num4f { --rotation: 240deg; }
 .circle .mini-circle .num3f { --rotation: 270deg; }
 .circle .mini-circle .num2f { --rotation: 300deg; }
@@ -193,11 +194,11 @@ h1 {
 .circle .mini-circle .num3s input { --rotation: -90deg; }
 .circle .mini-circle .num4s input { --rotation: -120deg; }
 .circle .mini-circle .num5s input { --rotation: -143deg; }
-.circle .mini-circle .num7f input { --rotation: -157deg; }
+.circle .mini-circle .num7f input { --rotation: -156deg; }
 .circle .mini-circle .num6s input { --rotation: -174deg; }
 .circle .mini-circle .num6f input { --rotation: -186deg; }
 .circle .mini-circle .num7s input { --rotation: -203deg; }
-.circle .mini-circle .num5f input { --rotation: -218deg; }
+.circle .mini-circle .num5f input { --rotation: -216deg; }
 .circle .mini-circle .num4f input { --rotation: -240deg; }
 .circle .mini-circle .num3f input { --rotation: -270deg; }
 .circle .mini-circle .num2f input { --rotation: -300deg; }
@@ -206,7 +207,7 @@ h1 {
 .line1 {
     width: .5px;
     height: 500px;
-    background-color: rgb(78, 190, 255);
+    background-color: lightskyblue;
     margin-left: 50%;
     position: absolute;
     transform: rotate(var(--rotation));
@@ -216,7 +217,7 @@ h1 {
 .line2 {
     width: .5px;
     height: 500px;
-    background-color: rgb(78, 190, 255);
+    background-color: lightskyblue;
     margin-left: 50%;
     position: absolute;
     transform: rotate(var(--rotation));
@@ -226,7 +227,7 @@ h1 {
 .line3 {
     width: .5px;
     height: 500px;
-    background-color: rgb(78, 190, 255);
+    background-color: lightskyblue;
     margin-left: 50%;
     position: absolute;
     transform: rotate(var(--rotation));
@@ -236,7 +237,7 @@ h1 {
 .line4 {
     width: .5px;
     height: 500px;
-    background-color: rgb(78, 190, 255);
+    background-color: lightskyblue;
     margin-left: 50%;
     position: absolute;
     transform: rotate(var(--rotation));
@@ -246,7 +247,7 @@ h1 {
 .line5 {
     width: .5px;
     height: 500px;
-    background-color: rgb(78, 190, 255);
+    background-color: lightskyblue;
     margin-left: 50%;
     position: absolute;
     transform: rotate(var(--rotation));
@@ -256,7 +257,7 @@ h1 {
 .line6 {
     width: .5px;
     height: 500px;
-    background-color: rgb(78, 190, 255);
+    background-color: lightskyblue;
     margin-left: 50%;
     position: absolute;
     transform: rotate(var(--rotation));

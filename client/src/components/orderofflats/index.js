@@ -7,13 +7,13 @@ function orderofFlats() {
 <div>
 <div className="row OFTitle">The Order of Flats</div>
 <div className="orderFlats">
-    <input type="text" id="input88"/>
-    <input type="text" id="input99"/>
-    <input type="text" id="input110"/>
-    <input type="text" id="input121"/>
-    <input type="text" id="input132"/>
-    <input type="text" id="input143"/>
-    <input type="text" id="input154"/>
+    <input type="text" id="input88" disabled/>
+    <input type="text" id="input99" disabled/>
+    <input type="text" id="input110" disabled/>
+    <input type="text" id="input121" disabled/>
+    <input type="text" id="input132" disabled/>
+    <input type="text" id="input143" disabled/>
+    <input type="text" id="input154" disabled/>
 </div>
 </div>
 
