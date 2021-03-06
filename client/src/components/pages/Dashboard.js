@@ -33,7 +33,7 @@ const Dashboard = props => {
     // console.log(midiNum);
     const noteObj = notes.find(note => note.midi === midiNum)
     console.log(noteObj.note)
-    if (noteObj.altAlt && ((currentInput > 55 && currentInput < 78) || (currentInput > 132 && currentInput < 155) )) {
+    if (noteObj.altAlt && ((currentInput > 55 && currentInput < 78) || (currentInput > 132 && currentInput < 155))) {
       openDialog(noteObj.note, noteObj.altAlt);
     }
     else if (noteObj.alt) {
@@ -88,6 +88,8 @@ const Dashboard = props => {
           </Grid>
           <Grid item xs={3}>
             <Flatscales
+              setInput={setInput}
+              currentInput={currentInput}
               ids={allFlatsArray} />
             <OrderofFlats />
           </Grid>

@@ -7,13 +7,13 @@ function orderofSharps() {
     <div>
     <div className="row OSTitle">The Order of Sharps</div>
     <div className="orderSharps">
-        <input type="text" id="input11"/>
-        <input type="text" id="input22"/>
-        <input type="text" id="input33"/>
-        <input type="text" id="input44"/>
-        <input type="text" id="input55"/>
-        <input type="text" id="input66"/>
-        <input type="text" id="input77"/>
+        <input type="text" id="input11" disabled/>
+        <input type="text" id="input22" disabled/>
+        <input type="text" id="input33" disabled/>
+        <input type="text" id="input44" disabled/>
+        <input type="text" id="input55" disabled/>
+        <input type="text" id="input66" disabled/>
+        <input type="text" id="input77" disabled/>
     </div>
 </div>
 
